@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="./Css.css">
+</head>
+
+<body>
+
+    <div class="surveyForm">
+
+        <header>
+
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking teh time to help us improve the platform</p>
+
+        </header>
+
+        <form action="">
+
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter Your Email">
+
+                <label for="age">Age<small>(optional)</small></label>
+                <input type="number" name="age" placeholder="Age">
+            </fieldset>
+
+            <fieldset>
+                <label for="rolelist">Which option best decribes your current role?</label>
+                <select name="role" id="role">
+                    <option value="" disabled>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="Full time job">Full time job</option>
+                    <option value="Full time learner">Full time learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="rcmnd">Would you recommend freeCodemap to a friend?</label>
+
+
+                <label for="rcmnd"><input type="radio" name="decs"> Definelty</label>
+                <label for="rcmnd"><input type="radio" name="decs"> Maybe</label>
+                <label for="rcmnd"><input type="radio" name="decs"> Not Sure</label><br>
+
+                <label for="feature">What is your favorite feature of freeCodeCamp?</label>
+                <select name="feature" id="feature">
+                    <option value="" disabled>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open source">Open source</option>
+                    <option value="Other">Other</option>
+                </select><br>
+
+                <label for="imprv">What would you like to see improved? <small>(Check all that apply)</small></label>
+
+
+                <label for="imp"><input type="checkbox"> Fronend Projects</label>
+                <label for="imp"><input type="checkbox"> Backend Projects</label>
+                <label for="imp"><input type="checkbox"> Data visualization</label>
+                <label for="imp"><input type="checkbox"> Challenges</label>
+                <label for="imp"><input type="checkbox"> Open source community</label>
+                <label for="imp"><input type="checkbox"> Gitter help rooms</label>
+                <label for="imp"><input type="checkbox"> Videos</label>
+                <label for="imp"><input type="checkbox"> City Meetups</label>
+                <label for="imp"><input type="checkbox"> Wiki</label>
+                <label for="imp"><input type="checkbox"> Forum</label>
+                <label for="imp"><input type="checkbox"> Additional Courses</label>
+                <label for="textarea"><input 
+                type="checkbox"> Any comments or suggestions?</label><br>
+
+                <textarea name="comments" id="comments" rows="8" placeholder="Enter your comment here..."></textarea>
+
+                <button type="submit">Submit</button>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+
+
+</body>
+
+</html>
